@@ -32,3 +32,9 @@ jobs:
 
       - name: Verify project compiles
         run: ./gradlew assembleMiniDebug --stacktrace
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+            name: DSU-Sideloader-miniDebug
+            path: app/build/outputs/apk/miniDebug/*.apk
