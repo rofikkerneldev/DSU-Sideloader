@@ -25,7 +25,7 @@ class StorageUtils {
                 availSizeInGb -= 4
             }
 
-            val maximumAllowedForAllocation = availSizeInGb / 2
+            val maximumAllowedForAllocation = availSizeInGb
             return Pair(hasAvailableStorage, maximumAllowedForAllocation)
         }
     }
