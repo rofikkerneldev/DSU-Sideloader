@@ -62,12 +62,12 @@ class HomeViewModel @Inject constructor(
     private val allocPercentage = DevicePropUtils.getGsidBinaryAllowedPerc()
     val allocPercentageInt = String.format("%.0f", allocPercentage * 100).toInt()
 
-    //private val storageStats = StorageUtils.getAllocInfo(allocPercentage)
-    //private val hasAvailableStorage = storageStats.first
-    //private val maximumAllowedForAllocation = storageStats.second
-     //private val storageStats = StorageUtils.getAllocInfo(allocPercentage)
-    //private val hasAvailableStorage = storageStats.first
-    //private val maximumAllowedForAllocation = storageStats.second
+    // private val storageStats = StorageUtils.getAllocInfo(allocPercentage)
+    // private val hasAvailableStorage = storageStats.first
+    // private val maximumAllowedForAllocation = storageStats.second
+    // private val storageStats = StorageUtils.getAllocInfo(allocPercentage)
+    // private val hasAvailableStorage = storageStats.first
+    // private val maximumAllowedForAllocation = storageStats.second
     private val hasAvailableStorage get() = StorageUtils.getAllocInfo(allocPercentage).first
     private val maximumAllowedForAllocation get() = StorageUtils.getAllocInfo(allocPercentage).second
     
